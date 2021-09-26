@@ -113,7 +113,7 @@ header {
 
 .calendar {
   width: 300px;
-  margin: 0 auto;
+  margin: 25vh 3vw;
 }
 
 .calendar .header {
@@ -198,4 +198,31 @@ header {
 .calendar .body .disabled {
   pointer-events: none;
   filter: brightness(40%);
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    //align-content: flex-start;
+    justify-content: center;
+    align-content: flex-end;
+  }
+  nav {
+    .logo {
+      margin-right: 0;
+    }
+  }
+  .calendar {
+    width: 300px;
+    margin: 1vh 7vw;
+    height: 20vh;
+  }
+  .main {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
 }

@@ -4,5 +4,12 @@
   max-height: 90vh;
   background-color: #3D3D3D;
   display: flex;
-  align-items: center;
+  //align-items: center;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    justify-content: center;
+    width: 100vw;
+    height: 45vh;
+  }
 }
