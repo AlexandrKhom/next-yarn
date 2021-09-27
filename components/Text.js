@@ -10,10 +10,10 @@ export function Text() {
 
   return (
     <div>
-      <p style={{ color: '#A2A2A2' }}>Month</p>
-      <input style={{ fontWeight: 'bold' }} type={'text'} value={format(selectDate, monthFormat)}/>
-      <p style={{ color: '#A2A2A2' }}>Day</p>
-      <input style={{ fontWeight: 'bold' }} type={'text'} value={format(selectDate, dayFormat)}/>
+      <p style={{ color: '#A2A2A2' }}>Month:</p>
+      <input style={{ fontWeight: 'bold', border: '2px solid yellow' }} type={'text'} value={format(selectDate, monthFormat)}/>
+      <p style={{ color: '#A2A2A2' }}>Day:</p>
+      <input style={{ fontWeight: 'bold', border: '2px solid yellow' }} type={'text'} value={format(selectDate, dayFormat)}/>
     </div>
   );
 }
